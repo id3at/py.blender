@@ -20,11 +20,9 @@ locale.setlocale(locale.LC_ALL, "") # ustawienie jezyka systemowego.
 #locale.setlocale(locale.LC_TIME, "en_US.utf8") 
 
 g = datetime.datetime.today()
-g = datetime.datetime.today()
 bpy.ops.object.text_add(enter_editmode=False, location=(0, 0, 0))
 
 def u(g): 
-    f = bpy.context.scene.objects['Text']
     g = datetime.datetime.today()
-    f.data.body = f'{g: %a, %b, %Y, %X}'
+    bpy.context.scene.objects['Text'].data.body = f'{g: %a, %b, %Y, %X}'
 bpy.app.handlers.frame_change_pre.append(u)
