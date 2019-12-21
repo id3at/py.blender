@@ -1,3 +1,8 @@
+""" Autor id3at
+Program tworzy aktualna date i czas w blender 2.81
+który zmienia się wraz z klatkami animacji
+"""
+
 import bpy
 import datetime
 g = datetime.datetime.today()
