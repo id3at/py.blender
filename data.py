@@ -12,7 +12,14 @@ który zmienia się wraz z klatkami animacji
 
 import bpy
 import datetime
+import locale
 
+locale.setlocale(locale.LC_ALL, "") # ustawienie jezyka systemowego.
+#opcjonalnie
+#locale.setlocale(locale.LC_TIME, "pl_PL.utf8") 
+#locale.setlocale(locale.LC_TIME, "en_US.utf8") 
+
+g = datetime.datetime.today()
 g = datetime.datetime.today()
 bpy.ops.object.text_add(enter_editmode=False, location=(0, 0, 0))
 
