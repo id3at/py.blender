@@ -6,10 +6,9 @@ który zmienia się wraz z klatkami animacji
 import bpy
 import datetime
 g = datetime.datetime.today()
+bpy.ops.object.text_add(enter_editmode=False, location=(0, 0, 0))
 
-def u(g):
-    bpy.ops.object.delete(use_global=False)
-    bpy.ops.object.text_add(enter_editmode=False, location=(0, 0, 0))
+def u(g): 
     f = bpy.context.scene.objects['Text']
     g = datetime.datetime.today()
     f.data.body = f'{g}'
