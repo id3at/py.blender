@@ -1,5 +1,5 @@
 """ Autor id3at
-Program tworzy obiekt tekstowy z aktualną datą i czasem w programie blender 2.81
+Skrypt tworzy obiekt tekstowy z aktualną datą i czasem w programie blender 2.81
 który zmienia się wraz z klatkami animacji
 """
 
